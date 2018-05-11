@@ -17,11 +17,8 @@ final(x) = 0;
          end
      end
      final(x) = final(x)+ term(x)*y(i);
-     disp(final(x));
  end
-disp((final(x)));
 final_Simplified_func = simplify(final(x));
-disp(final_Simplified_func);
 query_result = zeros(1,length(query));
  for i = 1:1:length(query_result)
      query_result(i) = feval(final,query(i));
